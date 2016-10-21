@@ -13,6 +13,9 @@
         <h1>Which Track Should You Take?</h1>
         <h3>First, tell us a little about yourself: </h3>
 
+        <label class="name">What is your first name?</label>
+        <input id="name" class="form-control" type="text">
+
         <label for "frontBack">Would you rather make things look nice or work on the infrastructure?</label>
         <select class="form-control" id="frontBack">
           <option value = "1">Make things look nice</option>
@@ -53,8 +56,8 @@
     <div class="clickable">
       <!-- <p id="responseHidden"></p> -->
       <p id="response"></p>
+      <span id="reload"><button onclick="myFunction()">Reload page</button></span>
     </div>
-
     <div id="goodbye">
       <h2>Goodbye and good luck!</h2>
     </div>

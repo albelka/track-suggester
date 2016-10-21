@@ -1,16 +1,19 @@
-var suggester = function(frontIn, companyIn, userIn, stateIn, payIn) {
+var suggester = function(frontIn, companyIn, userIn, stateIn, payIn, nameIn) {
    if (frontIn === 1) {
-   return "You should study CSS and design.";
+   return "Well, " + nameIn + ", You should study CSS and design.";
  } else if (payIn === 1 ) {
-   return "You should study PHP.";
+   return "Hey, " + nameIn +", you should study PHP.";
 } else if (stateIn === 3 || stateIn === 4 || payIn === 3) {
-    return "You should study Java/Android";
+    return "Thanks, " + nameIn + ", why don't you give Java/Android a try?";
  } else if (stateIn === 2 || companyIn === 1) {
-   return "You should study Ruby/Rails";
+   return "Looks like Ruby/Rails is the best route for you, " + nameIn;
   //  console.log("ruby attempt");
  } else {
    return "test";
  }
+ }
+ function myFunction() {
+   location.reload();
  }
 
  $(document).ready(function() { ;
@@ -21,15 +24,18 @@ var suggester = function(frontIn, companyIn, userIn, stateIn, payIn) {
      var userIn = parseInt($("#userInteraction").val());
      var stateIn= parseInt($("#state").val());
      var payIn = parseInt($("#pay").val());
-     var response = suggester(frontIn, companyIn, userIn, stateIn, payIn);
+     var nameIn = $("input#name").val();
+     var response = suggester(frontIn, companyIn, userIn, stateIn, payIn, nameIn);
 
      $("#response").text(response);
      $("#whichTrack").remove("form");
      $("p").show();
 
+
      $(".clickable").click(function() {
       $("p").hide();
-      $("h2").fadeIn();
+      $("#goodbye h2").fadeIn();
+      $("#reload").show();
 
      });
    });

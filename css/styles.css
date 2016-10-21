@@ -6,6 +6,14 @@ h2 {
   display: none;
 }
 
+#reload {
+  display: none;
+}
+
+#reload {
+  margin: 25%;
+}
+
 .clickable {
   cursor: pointer;
   color: #ae5404;
