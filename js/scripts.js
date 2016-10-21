@@ -35,6 +35,9 @@ var suggester = function(frontIn, companyIn, userIn, stateIn, payIn) {
      var response = suggester(frontIn, companyIn, userIn, stateIn, payIn);
 
      $("#response").text(response);
+     $("#whichTrack").remove("form");
+     $("#intro").remove("div")
+     $("p").show();
 
       // $("#t1").text(t1);
    });
