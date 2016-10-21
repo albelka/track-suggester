@@ -6,7 +6,7 @@
 
 ## Description
 
-_Track Suggester uses JavaScript and Bootstrap forms to ask five questions to help a user determine which programming track to follow. A simple conditional determines a result and informs the user. Then the site says "goodbye." This site can be viewed at .......GITHUB IS DOWN........._
+_Track Suggester uses JavaScript and Bootstrap forms to ask five questions to help a user determine which programming track to follow. A simple conditional determines a result and informs the user. Then the site says "goodbye." This site can be viewed at my-github-albelka.github.io/track-suggester_
 
 ## Setup/Installation Requirements
 
@@ -15,7 +15,7 @@ _Track Suggester uses JavaScript and Bootstrap forms to ask five questions to he
 
 ## Known Bugs
 
-_I would like to be able to automatically reload_
+_Validation selector for name input is not working_
 
 ## Support and contact details
 

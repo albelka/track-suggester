@@ -16,7 +16,6 @@ h2 {
 
 .clickable {
   cursor: pointer;
-  color: #ae5404;
 }
 
 .clickable:hover {
@@ -53,6 +52,20 @@ button {
   color: white;
 }
 
+img {
+  width: 50%;
+  margin-left: 3%;
+  margin-right: 15%;
+}
+
 .form-control {
   width: 50%
 }
+
+/*.has-error {
+  display: none;
+}
+
+.red {
+  border-color: red;
+}*/
