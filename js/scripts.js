@@ -1,12 +1,12 @@
 var suggester = function(frontIn, companyIn, userIn, stateIn, payIn) {
    if (frontIn === 1) {
    return "You should study CSS and design.";
- } else if (stateIn === 1 ) {
-   return "You should study Perl.";
+ } else if (payIn === 1 ) {
+   return "You should study PHP.";
 } else if (stateIn === 3 || stateIn === 4 || payIn === 3) {
-    return "You should study Java";
+    return "You should study Java/Android";
  } else if (stateIn === 2 || companyIn === 1) {
-   return "You should study Ruby";
+   return "You should study Ruby/Rails";
   //  console.log("ruby attempt");
  } else {
    return "test";
@@ -28,7 +28,9 @@ var suggester = function(frontIn, companyIn, userIn, stateIn, payIn) {
      $("p").show();
 
      $(".clickable").click(function() {
-      $("p").remove();
+      $("p").hide();
+      $("h2").fadeIn();
+
      });
    });
  });

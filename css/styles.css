@@ -2,6 +2,19 @@ p {
   display:none;
 }
 
+h2 {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #ae5404;
+}
+
+.clickable:hover {
+  color: orange;
+}
+
 
 p {
   border: 2px solid #e7feed;
@@ -10,6 +23,18 @@ p {
   padding: 8px;
   background-color: #e7fdfa;
   text-align: center;
+  border-radius: 6px;
+}
+
+h2 {
+  border: 2px solid #e7feed;
+  font-size: 40px;
+  margin: 20%;
+  padding: 8px;
+  background-color: #fba558;
+  text-align: center;
+  color: white;
+  border-radius: 6px;
 }
 
 button {
@@ -17,6 +42,7 @@ button {
   margin-right: 33%;
   margin-top: 5%;
   background-color: #037d50;
+  color: white;
 }
 
 .form-control {
