@@ -1,37 +1,41 @@
-// var triangle = function(side1, side2, side3) {
-//    if (side1 === side2 && side1 === side3 && side1 === side2) {
-//
-//    console.log("equil attempt");
-//    return "This is an equilateral triangle!";
-//
-//  } else if (side1 === side2 || side1 === side3) {
-//
-//    return "This is an isoceles triangle!";
-//    console.log("iso attempt");
-//
-//  } else if (side1 != side2 && side1 != side3 && side2 != side3) {
-//
-//     return "This is an scalene triangle!";
-//     console.log("scalene attempt");
-//
-//  } else if (side1 === side2 && side1 === side3) {
-//
-//    return "This is NOT a triangle!";
-//    console.log("NOT attempt");
-//
-//  } else {
-//    return "test";
-//  }
-//  }
-//
-//  $(document).ready(function() {
-//    $("form").submit(function(event) {
-//      event.preventDefault();
-//      var side1 = parseInt($("input#side1").val());
-//      var side2 = parseInt($("input#side2").val());
-//      var side3 = parseInt($("input#side3").val());
-//
-//      var t1 = triangle(side1, side2, side3);
-//       $("#t1").text(t1);
-//    });
-//  });
+var suggester = function(frontIn, companyIn, userIn, stateIn, payIn) {
+   if (frontIn === 1) {
+
+  //  console.log("equil attempt");
+   return "You should study CSS and design.";
+
+ } else if (stateIn === 1 ) {
+
+   return "You should study Perl.";
+  //  console.log("iso attempt");
+
+} else if (stateIn === 3 || stateIn === 4 || payIn === 3) {
+
+    return "You should study Java";
+    // console.log("scalene attempt");
+
+ } else if (stateIn === 2 || companyIn === 1) {
+
+   return "You should study Ruby";
+  //  console.log("NOT attempt");
+
+ } else {
+   return "test";
+ }
+ }
+
+ $(document).ready(function() { ;
+   $("form").submit(function(event) {
+     event.preventDefault();
+     var frontIn = parseInt($("#frontBack").val());
+     var companyIn= parseInt($("#companyType").val());
+     var userIn = parseInt($("#userInteraction").val());
+     var stateIn= parseInt($("#state").val());
+     var payIn = parseInt($("#pay").val());
+     var response = suggester(frontIn, companyIn, userIn, stateIn, payIn);
+
+     $("#response").text(response);
+
+      // $("#t1").text(t1);
+   });
+ });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Programming Track Suggester</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,37 +15,41 @@
       <form id="whichTrack">
         <label for "frontBack">Would you rather make things look nice or work on the infrastructure?</label>
         <select class="form-control" id="frontBack">
-          <option>Make things look nice</option>
-          <option>Work on the infrastructure</option>
+          <option value = "1">Make things look nice</option>
+          <option value = "2">Work on the infrastructure</option>
         </select>
 
         <label for "companyType">Would you rather work for a small start-up or a large established corporation?</label>
         <select class="form-control" id="companyType">
-          <option>Small start-up</option>
-          <option>Established company</option>
+          <option value="1">Small start-up</option>
+          <option value="2">Established company</option>
         </select>
 
         <label for "userInteraction">Do you like to create pages with a lot of user interaction?</label>
         <select class="form-control" id="userInteraction">
-          <option>Talk to me, user.</option>
-          <option>I prefer more content-heavy websites.</option>
+          <option value="1">Talk to me, user.</option>
+          <option value="2">I prefer more content-heavy websites.</option>
         </select>
 
-        <label for "usstate">Where would you rather live?</label>
-        <select class="form-control" id="usstate">
-          <option>Maine</option>
-          <option>South Dakota</option>
-          <option>Oregon</option>
-          <option>New Mexico</option>
+        <label for "state">Where would you rather live?</label>
+        <select class="form-control" id="state">
+          <option value="1">Maine</option>
+          <option value="2">South Dakota</option>
+          <option value="3">Oregon</option>
+          <option value="4">New Mexico</option>
         </select>
 
         <label for "pay">What is the style to which you have become accumstomed?</label>
         <select class="form-control" id="pay">
-          <option>My own pool</option>
-          <option>My own pony</option>
-          <option>My own pool-boy and stable</option>
+          <option value="1">My own pool</option>
+          <option value="2">My own pony</option>
+          <option value="3">My own pool-boy and stable</option>
         </select>
 
+        <button type="submit" class="btn">Find your niche!</button>
+      </form>
     </div>
+
+    <p id="response"></p>
   </body>
 </html>
